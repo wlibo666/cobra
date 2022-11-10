@@ -5,6 +5,6 @@ go 1.15
 require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2
 	github.com/inconshreveable/mousetrap v1.0.1
-	github.com/wlibo666/pflag v1.0.5
+	github.com/wlibo666/pflag v0.0.0-20221110091648-7af837081d6d // indirect
 	gopkg.in/yaml.v3 v3.0.1
 )
