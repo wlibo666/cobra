@@ -2020,7 +2020,7 @@ func TestFlagCompletionWorksRootCommandAddedAfterFlags(t *testing.T) {
 		return []string{"myval"}, ShellCompDirectiveDefault
 	})
 
-	// Important: This is a test for https://github.com/spf13/cobra/issues/1437
+	// Important: This is a test for https://github.com/wlibo666/cobra/issues/1437
 	// Only add the subcommand after RegisterFlagCompletionFunc was called, do not change this order!
 	rootCmd.AddCommand(childCmd)
 

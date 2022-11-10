@@ -32,7 +32,7 @@ func main() {
 Cobra-CLI is its own program that will create your application and add any
 commands you want. It's the easiest way to incorporate Cobra into your application.
 
-For complete details on using the Cobra generator, please refer to [The Cobra-CLI Generator README](https://github.com/spf13/cobra-cli/blob/main/README.md)
+For complete details on using the Cobra generator, please refer to [The Cobra-CLI Generator README](https://github.com/wlibo666/cobra-cli/blob/main/README.md)
 
 ## Using the Cobra Library
 
@@ -50,7 +50,7 @@ var rootCmd = &cobra.Command{
   Use:   "hugo",
   Short: "Hugo is a very fast static site generator",
   Long: `A Fast and Flexible Static Site Generator built with
-                love by spf13 and friends in Go.
+                love by wlibo666 and friends in Go.
                 Complete documentation is available at https://gohugo.io/documentation/`,
   Run: func(cmd *cobra.Command, args []string) {
     // Do Stuff Here
@@ -76,8 +76,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
+	"github.com/wlibo666/cobra"
+	"github.com/wlibo666/viper"
 )
 
 var (
@@ -171,7 +171,7 @@ package cmd
 import (
   "fmt"
 
-  "github.com/spf13/cobra"
+  "github.com/wlibo666/cobra"
 )
 
 func init() {
@@ -198,7 +198,7 @@ package cmd
 import (
   "fmt"
 
-  "github.com/spf13/cobra"
+  "github.com/wlibo666/cobra"
 )
 
 func init() {
@@ -269,7 +269,7 @@ command := cobra.Command{
 
 ### Bind Flags with Config
 
-You can also bind your flags with [viper](https://github.com/spf13/viper):
+You can also bind your flags with [viper](https://github.com/wlibo666/viper):
 ```go
 var author string
 
@@ -283,7 +283,7 @@ In this example, the persistent flag `author` is bound with `viper`.
 **Note**: the variable `author` will not be set to the value from config,
 when the `--author` flag is provided by user.
 
-More in [viper documentation](https://github.com/spf13/viper#working-with-flags).
+More in [viper documentation](https://github.com/wlibo666/viper#working-with-flags).
 
 ### Required flags
 
@@ -388,7 +388,7 @@ by not providing a 'Run' for the 'rootCmd'.
 
 We have only defined one flag for a single command.
 
-More documentation about flags is available at https://github.com/spf13/pflag
+More documentation about flags is available at https://github.com/wlibo666/pflag
 
 ```go
 package main
@@ -397,7 +397,7 @@ import (
   "fmt"
   "strings"
 
-  "github.com/spf13/cobra"
+  "github.com/wlibo666/cobra"
 )
 
 func main() {
@@ -574,7 +574,7 @@ package main
 import (
   "fmt"
 
-  "github.com/spf13/cobra"
+  "github.com/wlibo666/cobra"
 )
 
 func main() {
